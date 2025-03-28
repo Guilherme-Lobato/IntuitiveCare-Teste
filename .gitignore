@@ -1,0 +1,17 @@
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+venv/
+env/
+.env/
+
+# Arquivos do projeto
+Anexos/
+*.pdf
+*.zip
+
+# Arquivos do ChromeDriver
+.wdm/ 
