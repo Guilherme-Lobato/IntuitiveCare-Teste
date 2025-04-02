@@ -34,9 +34,8 @@ CREATE TABLE dados_adm (
     VL_SALDO_FINAL DECIMAL(15,2)
 );
 
--- 3.4 | IMPORTAR CONTEÚDO 
--- Importando dados cadastrais das operadoras
-LOAD DATA INFILE 'C:/Users/guilh/OneDrive/Documents/Teste IntuitiveCare/DadosANS/Relatorio_cadop.csv'
+-- 3.4 
+LOAD DATA INFILE 'DadosANS/Relatorio_cadop.csv'
 INTO TABLE relatorio_cadop
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
@@ -46,8 +45,8 @@ IGNORE 1 ROWS
 (Registro_ANS, CNPJ, Razao_Social, Nome_Fantasia, Modalidade, Logradouro, Numero, Complemento, Bairro, Cidade, UF, CEP, DDD, Telefone, Fax, Endereco_eletronico, Representante, Cargo_Representante, Regiao_de_Comercializacao, @Data_Registro_ANS)
 SET Data_Registro_ANS = STR_TO_DATE(@Data_Registro_ANS, '%d/%m/%Y');
 
--- Alterar o caminho do arquivo para consultar cada semestre
-LOAD DATA INFILE 'C:/Users/guilh/OneDrive/Documents/Teste IntuitiveCare/DadosANS/<PASTA_TRIMESTRE_E_ANO/ARQUIVO.CSV>'
+-- Alterar o caminho do arquivo para carregar cada semestre
+LOAD DATA INFILE 'DadosANS/4T2023/4T2023.csv'
 INTO TABLE dados_adm
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ';'
