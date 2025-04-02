@@ -65,8 +65,8 @@ npm install
 
 ```bash
 cd CodigosPython
-python web_scraping.py
-python transformacao.py
+py web_scraping.py
+py transformacao.py
 ```
 
 ### 2. Banco de Dados
@@ -82,7 +82,7 @@ python transformacao.py
 1. Inicie o servidor backend:
 ```bash
 cd TesteAPI/backend
-python main.py
+py main.py
 ```
 
 2. Em outro terminal, inicie o frontend:
@@ -116,13 +116,9 @@ npm run serve
 ### 4. Teste de API
 - Servidor Python com rota de busca
 - Interface Vue.js para interação
-- Documentação Postman disponível
 
-## Documentação Adicional
 
-- A documentação da API está disponível no Postman
-- Os scripts SQL incluem comentários explicativos
-- Os códigos Python incluem documentação inline
+
 
 ## Observações
 
