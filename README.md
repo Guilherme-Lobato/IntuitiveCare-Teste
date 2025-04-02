@@ -36,14 +36,8 @@ pip install -r requirements.txt
 ### 2. Teste de Banco de Dados
 
 1. Instale o MySQL 8.0 ou PostgreSQL 10.0
-2. Configure as credenciais do banco de dados no arquivo de configuração
-3. Execute os scripts SQL na ordem:
-   ```bash
-   cd DadosANS
-   mysql -u seu_usuario -p < queries.sql  # Para MySQL
-   # ou
-   psql -U seu_usuario -d seu_banco -f queries.sql  # Para PostgreSQL
-   ```
+2. Configure a conexão com o banco de dados
+3. Execute as queries
 
 ### 3. Teste de API e Interface Web
 
@@ -117,11 +111,3 @@ npm run serve
 - Servidor Python com rota de busca
 - Interface Vue.js para interação
 
-
-
-
-## Observações
-
-- Mantenha as credenciais do banco de dados seguras
-- Os arquivos grandes não estão incluídos no repositório
-- Siga as instruções específicas de cada teste para execução 
