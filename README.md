@@ -1,7 +1,3 @@
-# Testes de Nivelamento v.250321
-
-Este projeto contém 4 testes de nivelamento para a IntuitiveCare, cada um focado em uma área específica de desenvolvimento.
-
 ## Estrutura do Projeto
 
 ```
